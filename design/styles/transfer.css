@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f6f5f7;
+  height: 95vh;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+form {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+
+.custom-btn {
+  border-radius: 20px;
+  border: 1px solid #f0a04b;
+  background-color: #f0a04b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+  max-width: 100%;
+  min-height: 480px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.transfer-container {
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 0 10%;
+}
+
+.back_btn {
+  margin: 10px;
+}
+
+.bk-btn {
+  height: 52px;
+  width: 52px;
+  background-color: black;
+  border-radius: 50%;
+}
+.bk-btn .bk-btn-triangle {
+  position: relative;
+  top: 13px;
+  left: 10.4px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  border-right: 13px solid white;
+}
+.bk-btn .bk-btn-bar {
+  position: relative;
+  background-color: white;
+  height: 7.8px;
+  width: 13px;
+  top: -3.64px;
+  left: 22.88px;
+}

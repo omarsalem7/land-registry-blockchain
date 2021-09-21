@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./styles/transfer.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="../node_modules/web3/dist/web3.min.js"></script>
+   
+</head>
+
+<body>
+    <button class="back_btn" onclick="goBack()">
+        <div class="bk-btn">
+            <div class="bk-btn-triangle"></div>
+            <div class="bk-btn-bar"></div>
+        </div>
+    </button>
+    <div class="container" id="container">
+
+        <div class="form-container transfer-container">
+            <form action="#">
+                <h1>Transfer Land</h1>
+                <br>
+
+                <input type="text" placeholder="Buyer Account" id="txt_account" />
+                <input type="text" placeholder="Land Id" id="txt_landid"/>
+                <br>
+                <button class="custom-btn" id="transferbtn">Transfer</button>
+            </form>
+        </div>
+
+    </div>
+    <script src="./scripts/main.js"></script>
+<script>
+$("#transferbtn").on('click',() =>{
+    console.log($('#txt_account').val() + $('#txt_landid').val());
+           Contract.transferLand.sendTransaction($('#txt_account').val(), parseInt($('#txt_landid').val()) ,{from: account }, (result,error)=>{console.log(error)});
+   });
+</script>
+</body>
+
+
+</html>

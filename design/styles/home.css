@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+body {
+  overflow-y: hidden;
+}
+.header {
+  background-image: url(../images/pexels-pixabay-302769.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.page-header {
+  color: whitesmoke;
+  padding-top: 10%;
+  font-size: 4rem;
+  font-family: "Carter One", cursive;
+}
